@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-set :bind, '172.16.54.107'
+
 set :port, 3000
- 
 get "/upload" do
   haml :upload
 end
@@ -15,7 +14,6 @@ post "/upload" do
   end
   return "The file was successfully uploaded!"
 end
-
 
 
   
